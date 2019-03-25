@@ -60,24 +60,42 @@ nav {
     background-color: #EAEAEA;
 }
 
-/*---------------------------------Datavisualisering Cirkeldiagram-------------------------*/
+/*---------------------------------Infografik cykel diagram-------------------------*/
 
 #section3 {
     background-color: #414B5A;
     color: white;
 }
 
+#section3 .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#section3 .column_left {
+    background-image: url(SVG/infografik2.svg);
+    background-size: 80vw;
+    background-repeat: no-repeat;
+    height: 30vw;
+    width: 150vw;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+
 /*----------------------------------------Interaktivtspil----------------------------------*/
 
 #section4 {}
 
-/*---------------------------------Infografik af cykel digram------------------------------*/
+
+/*---------------------------Datavisualisering søjle diagram ------------------------------*/
+
 
 #section5 {
     background-color: #EAEAEA;
 }
 
-.infografik {
+.datavisualisering {
     display: flex;
     flex-wrap: wrap;
 }
@@ -110,6 +128,7 @@ nav {
     height: 10vw;
     width: 12vw;
 }
+
 
 /*----------------------------------------Footer----------------------------------*/
 footer {
