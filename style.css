@@ -7,7 +7,10 @@
 
 body {
     background-color: #FFFFFF;
-    font-family: "helvetica";
+    /*    font-family: "helvetica";*/
+    /*    font-family: 'Anonymous Pro', monospace;*/
+    font-family: 'Lekton', sans-serif;
+    line-height: 150%;
 }
 
 h1 {}
@@ -22,17 +25,21 @@ p {}
 /*--------------------------------------------Navigation-----------------------------------*/
 nav {
     background-color: #373D46;
-    height: 30px;
+    height: 10px;
+    padding: 20px;
 }
 
 /*-------------------------Kampagne navn og kort beskrivelse-------------------------------*/
 
-#section1 {}
+#section1 {
+    padding: 20px;
+}
 
 /*-----------------------------------------Kampagne video----------------------------------*/
 
 #section2 {
     background-color: #EAEAEA;
+    padding: 20px;
 }
 
 /*---------------------------------Datavisualisering Cirkeldiagram-------------------------*/
@@ -40,20 +47,54 @@ nav {
 #section3 {
     background-color: #414B5A;
     color: white;
+    padding: 20px;
 }
 
 /*----------------------------------------Interaktivtspil----------------------------------*/
 
-#section4 {}
+#section4 {
+    padding: 20px;
+}
 
 /*---------------------------------Infografik af cykel digram------------------------------*/
 
 #section5 {
     background-color: #EAEAEA;
+    padding: 20px;
+}
+
+.infografik {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dame {
+    background-image: url(SVG/dame.svg);
+    background-size: 20vw;
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 25vw;
+}
+
+.herre {
+    background-image: url(SVG/herre.svg);
+    background-size: 20vw;
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 25vw;
+}
+
+.uni {
+    background-image: url(SVG/uni.svg);
+    background-size: 20vw;
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 25vw;
 }
 
 /*----------------------------------------Footer----------------------------------*/
 footer {
     background-color: #373D46;
-    height: 30px;
+    height: 10px;
+    padding: 20px;
 }
