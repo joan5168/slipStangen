@@ -1,5 +1,14 @@
 /*-------------------------------------------Generalt--------------------------------------*/
-body {}
+
+* {
+    margin: 0;
+
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "helvetica";
+}
 
 h1 {}
 
@@ -10,7 +19,11 @@ p {}
 
 
 
-
+/*--------------------------------------------Navigation-----------------------------------*/
+nav {
+    background-color: #373D46;
+    height: 30px;
+}
 
 /*-------------------------Kampagne navn og kort beskrivelse-------------------------------*/
 
@@ -18,11 +31,16 @@ p {}
 
 /*-----------------------------------------Kampagne video----------------------------------*/
 
-#section2 {}
+#section2 {
+    background-color: #EAEAEA;
+}
 
 /*---------------------------------Datavisualisering Cirkeldiagram-------------------------*/
 
-#section3 {}
+#section3 {
+    background-color: #414B5A;
+    color: white;
+}
 
 /*----------------------------------------Interaktivtspil----------------------------------*/
 
@@ -30,4 +48,12 @@ p {}
 
 /*---------------------------------Infografik af cykel digram------------------------------*/
 
-#section5 {}
+#section5 {
+    background-color: #EAEAEA;
+}
+
+/*----------------------------------------Footer----------------------------------*/
+footer {
+    background-color: #373D46;
+    height: 30px;
+}
