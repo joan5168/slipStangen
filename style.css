@@ -2,22 +2,43 @@
 
 * {
     margin: 0;
-
 }
 
 body {
     background-color: #FFFFFF;
-    /*    font-family: "helvetica";*/
-    /*    font-family: 'Anonymous Pro', monospace;*/
-    font-family: 'Lekton', sans-serif;
     line-height: 150%;
 }
 
-h1 {}
+h1 {
+    font-family: 'Lekton', sans-serif;
+    font-size: 30px;
+}
 
-h2 {}
+h2 {
+    font-family: 'Lekton', sans-serif;
+}
 
-p {}
+p {
+    font-family: "helvetica";
+    font-weight: 100;
+}
+
+.column_left {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.column_right {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.sectionwrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 
 
@@ -31,15 +52,12 @@ nav {
 
 /*-------------------------Kampagne navn og kort beskrivelse-------------------------------*/
 
-#section1 {
-    padding: 20px;
-}
+#section1 {}
 
 /*-----------------------------------------Kampagne video----------------------------------*/
 
 #section2 {
     background-color: #EAEAEA;
-    padding: 20px;
 }
 
 /*---------------------------------Datavisualisering Cirkeldiagram-------------------------*/
@@ -47,20 +65,16 @@ nav {
 #section3 {
     background-color: #414B5A;
     color: white;
-    padding: 20px;
 }
 
 /*----------------------------------------Interaktivtspil----------------------------------*/
 
-#section4 {
-    padding: 20px;
-}
+#section4 {}
 
 /*---------------------------------Infografik af cykel digram------------------------------*/
 
 #section5 {
     background-color: #EAEAEA;
-    padding: 20px;
 }
 
 .infografik {
@@ -68,33 +82,39 @@ nav {
     flex-wrap: wrap;
 }
 
+#section5 .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .dame {
     background-image: url(SVG/dame.svg);
-    background-size: 20vw;
+    background-size: 10vw;
     background-repeat: no-repeat;
-    height: 20vw;
-    width: 25vw;
+    height: 10vw;
+    width: 12vw;
 }
 
 .herre {
     background-image: url(SVG/herre.svg);
-    background-size: 20vw;
+    background-size: 10vw;
     background-repeat: no-repeat;
-    height: 20vw;
-    width: 25vw;
+    height: 10vw;
+    width: 12vw;
 }
 
 .uni {
     background-image: url(SVG/uni.svg);
-    background-size: 20vw;
+    background-size: 10vw;
     background-repeat: no-repeat;
-    height: 20vw;
-    width: 25vw;
+    height: 10vw;
+    width: 12vw;
 }
 
 /*----------------------------------------Footer----------------------------------*/
 footer {
     background-color: #373D46;
-    height: 10px;
-    padding: 20px;
+    color: #a7a7a7;
+    font-family: 'Lekton', sans-serif;
+    line-height: 100%;
 }
