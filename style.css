@@ -18,6 +18,11 @@ h2 {
     font-family: 'Lekton', sans-serif;
 }
 
+h3 {
+    font-family: 'Lekton', sans-serif;
+    font-size: 17px;
+}
+
 p {
     font-family: "helvetica";
     font-weight: 100;
@@ -31,6 +36,7 @@ p {
 .column_right {
     flex-basis: 200px;
     flex-grow: 1;
+    margin-left: 70px;
 }
 
 .sectionwrapper {
@@ -52,7 +58,9 @@ nav {
 
 /*-------------------------Kampagne navn og kort beskrivelse-------------------------------*/
 
-#section1 {}
+#section1 .sectionwrapper {
+    margin-right: 400px;
+}
 
 /*-----------------------------------------Kampagne video----------------------------------*/
 
@@ -60,11 +68,16 @@ nav {
     background-color: #EAEAEA;
 }
 
+video {
+    width: 100%;
+}
+
 /*---------------------------------Infografik cykel diagram-------------------------*/
 
 #section3 {
     background-color: #414B5A;
     color: white;
+    padding-bottom: 50px;
 }
 
 #section3 .sectionwrapper {
@@ -73,14 +86,18 @@ nav {
 }
 
 #section3 .column_left {
-    background-image: url(SVG/infografik2.svg);
-    background-size: 80vw;
+    background-image: url(SVG/infografik3.svg);
+    background-size: 100%;
     background-repeat: no-repeat;
+    /*
     height: 30vw;
-    width: 150vw;
+    width: 110vw;
+*/
     flex-basis: 300px;
     flex-grow: 1;
 }
+
+
 
 
 /*----------------------------------------Interaktivtspil----------------------------------*/
