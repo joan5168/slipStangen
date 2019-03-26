@@ -134,6 +134,10 @@ video {
     grid-template-columns: 1fr 1fr;
 }
 
+#section5 p {
+    margin-right: 150px;
+}
+
 .dame {
     background-image: url(SVG/dame.svg);
     background-size: 10vw;
