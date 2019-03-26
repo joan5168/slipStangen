@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -28,22 +29,23 @@ p {
     font-weight: 100;
 }
 
-.column_left {
-    flex-basis: 200px;
-    flex-grow: 1;
-}
 
-.column_right {
-    flex-basis: 200px;
-    flex-grow: 1;
-    margin-left: 70px;
-}
+/*
 
-.sectionwrapper {
+.sectionwrapper div,
+section .text {
+
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    padding: 1vw 2vw;
+}
+*/
+
+.sectionwrapper {
+    padding: 2vw 5vw;
 }
 
 
@@ -52,8 +54,17 @@ p {
 /*--------------------------------------------Navigation-----------------------------------*/
 nav {
     background-color: #373D46;
-    height: 10px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    background-image: url(foto/logo2.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 30px;
+    width: 180px;
+    margin-left: 5vw;
 }
 
 /*-------------------------Kampagne navn og kort beskrivelse-------------------------------*/
@@ -81,20 +92,21 @@ video {
 }
 
 #section3 .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #section3 .column_left {
     background-image: url(SVG/infografik3.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    /*
-    height: 30vw;
-    width: 110vw;
-*/
-    flex-basis: 300px;
-    flex-grow: 1;
+    width: 50vw;
+    height: calc(50vw/2.8);
+    padding: 1vw 2vw;
+}
+
+#section3 .column_right {
+    padding: 1vw 2vw;
 }
 
 
@@ -112,14 +124,14 @@ video {
     background-color: #EAEAEA;
 }
 
-.datavisualisering {
-    display: flex;
-    flex-wrap: wrap;
+.text {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
 }
 
 #section5 .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .dame {
@@ -146,11 +158,98 @@ video {
     width: 12vw;
 }
 
+/*---------- SØJLE --------*/
+#svgcontainer {
+    width: 50%;
+    min-width: 400px;
+    margin: 0 auto;
+    /*            border: 1px solid #666;*/
+    background: #c7c7c7;
+    background-size: cover;
+}
 
-/*----------------------------------------Footer----------------------------------*/
+#bars line {
+    stroke: #414B5A;
+    stroke-width: 30;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    transition: all 2s ease;
+}
+
+.st0 {
+    stroke: #fff;
+}
+
+.graf-text {
+    font-family: monospace, sans-serif;
+    fill: #fff;
+}
+
+#section5 img {
+    max-width: 50px;
+    margin-left: 25px;
+}
+
+.cykler {
+    margin-left: 34px;
+}
+
+
+
+
+/*-------------------------------------------------Footer----------------------------------*/
 footer {
     background-color: #373D46;
     color: #a7a7a7;
     font-family: 'Lekton', sans-serif;
     line-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------Media Queries --------------------------------*/
+
+@media screen and (max-width: 1150px) {
+
+    #section1 .sectionwrapper {
+        margin-right: 200px;
+    }
+
+    #section3 .sectionwrapper {
+        grid-template-columns: 1fr;
+    }
+
+    #section3 .column_left {
+        width: 90vw;
+        height: calc(100vw/2.8);
+    }
+
+    #section5 .sectionwrapper {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    #section1 .sectionwrapper {
+        margin-right: 0px;
+    }
 }
