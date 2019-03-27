@@ -116,6 +116,16 @@ header a {
     height: 50px;
 }
 
+/*--------------------------------------SPLASH---------------------------------------------*/
+#section0 {}
+
+.splash {
+    background-image: url(foto/splash2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 200px;
+}
 
 /*-------------------------Kampagne navn og kort beskrivelse-------------------------------*/
 
@@ -197,7 +207,7 @@ video {
 }
 
 #section3 .column_left {
-    background-image: url(SVG/infografik3.svg);
+    background-image: url(SVG/cykelgrafik.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 50vw;
