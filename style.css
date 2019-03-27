@@ -53,9 +53,20 @@ section .text {
 
 /*--------------------------------------------Navigation-----------------------------------*/
 nav {
-    background-color: #373D46;
+    background-color: #28282B;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+}
+
+header a {
+    color: white;
+    font-family: 'Lekton', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 100px;
+
 }
 
 .logo {
@@ -113,9 +124,49 @@ nav {
     padding-bottom: 50px;
 }
 
-#section1 .sectionwrapper {
-    margin-right: 400px;
+#section1 h3 {
+    max-width: 800px;
 }
+
+#section1 .sectionwrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#section1 p {
+    font-family: 'Lekton', sans-serif;
+    font-size: 22px;
+    color: #2cd900;
+
+}
+
+/*---------------cykel sprite-------------*/
+.cykel_kf {
+    animation-name: cykel_kf;
+    animation-duration: 1.35s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: steps(4);
+}
+
+@keyframes cykel_kf {
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: -400%;
+    }
+}
+
+.cykelsprite {
+    background-size: 400% 100%;
+    width: 15vw;
+    height: 15vw;
+    background-image: url(SVG/kat_sprite.svg);
+    height: 15vw;
+}
+
 
 
 
@@ -173,6 +224,11 @@ video {
     grid-template-columns: 1fr 1fr;
 }
 
+#section4 img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 /*---------------------------Datavisualisering søjle diagram ------------------------------*/
@@ -198,29 +254,7 @@ video {
     margin-right: 150px;
 }
 
-.dame {
-    background-image: url(SVG/dame.svg);
-    background-size: 10vw;
-    background-repeat: no-repeat;
-    height: 10vw;
-    width: 12vw;
-}
 
-.herre {
-    background-image: url(SVG/herre.svg);
-    background-size: 10vw;
-    background-repeat: no-repeat;
-    height: 10vw;
-    width: 12vw;
-}
-
-.uni {
-    background-image: url(SVG/uni.svg);
-    background-size: 10vw;
-    background-repeat: no-repeat;
-    height: 10vw;
-    width: 12vw;
-}
 
 /*---------- SØJLE --------*/
 #svgcontainer {
@@ -263,7 +297,7 @@ video {
 
 /*-------------------------------------------------Footer----------------------------------*/
 footer {
-    background-color: #373D46;
+    background-color: #28282B;
     color: #a7a7a7;
     font-family: 'Lekton', sans-serif;
     line-height: 100%;
@@ -286,7 +320,7 @@ footer {
 @media screen and (max-width: 1150px) {
 
     #section1 .sectionwrapper {
-        margin-right: 200px;
+        margin-right: 0px;
     }
 
     #section3 .sectionwrapper {
@@ -322,5 +356,41 @@ footer {
 
     #section5 .sectionwrapper {
         grid-template-columns: 1fr;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    #svgcontainer {
+        width: 100%;
+        min-width: 80vw;
+    }
+
+    #section5 img {
+        max-width: 12%;
+        margin-left: 2%%;
+    }
+
+    .cykler {
+        margin-left: 8%;
+    }
+
+    #section1 .sectionwrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .cykelsprite {
+        width: 30vw;
+        height: 30vw;
+        height: 30vw;
+    }
+
+    #section1 .column_right {
+        margin-left: 140px;
     }
 }
