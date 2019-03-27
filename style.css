@@ -67,16 +67,64 @@ nav {
     margin-left: 5vw;
 }
 
+
+/*---------------------- BUTTON ---------------------*/
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    border: none;
+    right: 30px;
+    z-index: 2;
+    background-image: url(foto/arrow1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 52px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+
+}
+
+#myBtn:hover {
+    background-image: url(foto/arrow2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-size: 52px;
+    transform: scale(1.1);
+    opacity: 0.7;
+
+    width: 50px;
+    height: 50px;
+}
+
+
 /*-------------------------Kampagne navn og kort beskrivelse-------------------------------*/
+
+#section1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 #section1 .sectionwrapper {
     margin-right: 400px;
 }
 
+
+
 /*-----------------------------------------Kampagne video----------------------------------*/
 
 #section2 {
     background-color: #EAEAEA;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 video {
@@ -88,6 +136,7 @@ video {
 #section3 {
     background-color: #414B5A;
     color: white;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -114,7 +163,16 @@ video {
 
 /*----------------------------------------Interaktivtspil----------------------------------*/
 
-#section4 {}
+#section4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#section4 .sectionwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 
 /*---------------------------Datavisualisering søjle diagram ------------------------------*/
@@ -122,6 +180,8 @@ video {
 
 #section5 {
     background-color: #EAEAEA;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .text {
@@ -238,10 +298,13 @@ footer {
         height: calc(100vw/2.8);
     }
 
-    #section5 .sectionwrapper {
+    #section4 .sectionwrapper {
         grid-template-columns: 1fr;
     }
 
+    #section5 p {
+        margin-right: 10px;
+    }
 
 }
 
@@ -255,5 +318,9 @@ footer {
 
     #section1 .sectionwrapper {
         margin-right: 0px;
+    }
+
+    #section5 .sectionwrapper {
+        grid-template-columns: 1fr;
     }
 }

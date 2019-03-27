@@ -21,7 +21,7 @@
         </nav>
     </header>
 
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
 
     <!----------------------- Kampagne navn og kort beskrivelse----------------------->
 
@@ -29,7 +29,8 @@
         <div class="sectionwrapper">
             <h1>Slip Stangen</h1>
             <br>
-            <h3>Giv slip på cykel stangen! og i stedet benyt en cykel med lav indstigning. Gør cykelturene mere sikre i trafikken for dig og din familie.
+            <h3>Giv slip på cykel stangen!
+                Er du 65+ år, så gør cykelturene mere sikre i trafikken for dig og din familie ved at benytte en cykel med lavindstigning.
                 <br>
                 <br>
                 #SlipStangen</h3>
@@ -67,8 +68,8 @@
             </div>
             <div class="column_right">
                 <br>
-                <p>Uheld blandt ældre cykelister re oftest forbundet med manglende balance
-                    <br><br>Flere og flere ældre cykler i dag, men balancen er ikke den samme som den har været. Desværre er der en øgede risiko som primært skyldes deres skrøbelig fysisk. Cykel valget er derfor vigtigt når der gælder sikkerhed i trafikken. </p>
+                <p>Uheld blandt ældre cykelister er ofte forbundet med manglende balance.
+                    <br>Flere og flere ældre cykler i dag, men balancen er ikke den samme som den har været. Desværre er der en øget risiko for tilskadekommene, som primært skyldes deres skrøbelig fysisk. Dit valg af cykel er derfor vigtigt, når der gælder sikkerhed i trafikken. </p>
             </div>
         </div>
 
@@ -80,9 +81,12 @@
     <section id="section4">
         <div class="sectionwrapper">
             <h2>FANG STANGEN!</h2>
-            <br>
-            <p>Vil du lære lidt mere om de forskellige cykler, kan du prøve dette spil.
+<br> <br>            <p>Vil du lære lidt mere om de forskellige cykler, kan du prøve dette spil.
+                <br><br>
             </p>
+            <a href="http://ohnonotanotherwebsite.com/fangstangen/index.html?fbclid=IwAR1qEK4jJaX8aWrQrMkHcGLQxXqWCs_ax3nzKibsEvLrT9-dOv4CEBrlTQ0" target="_blank">
+                <img src="foto/fs_startside.gif" alt="ang stangen" width="100%" height="auto">
+            </a>
         </div>
     </section>
 
@@ -97,11 +101,11 @@
                 <h2>Hvilken cykel har du?</h2>
                 <br>
                 <p>
-                    Damecyklen er den mest udbredte cykel blandt befolkningen i danmark. 49% bruger damecykel og 41% bruger herrecykel. Kun 9% har taget det sikreste valg, nemlig unisex cyklen.
+                    Damecyklen er den mest udbredte cykel blandt befolkningen i Danmark. 49% benytter damecyklen og 41% benytter herrecyklen. Kun 9% har valgt unisex cyklen, som er det sikreste valg hvis de er over 65+.
                     <br><br>
                     En undersøgelse har vist at 34% af de mandlige cyklister, ikke vidste, at uni-sex cykler også er beregnet til mænd, mens 46% af kvinderne ikke vidste dette.
                     <br><br>
-                    En unisex cykler har lav indstigning - dvs. en cykel, hvor man ikke skal løfte benet ret højt for at stige på eller af cyklen.
+                    En unisex cykler har lav indstigning - dvs. en cykel, hvor man ikke skal løfte benet højt for at stige på eller af cyklen.
                 </p>
             </div>
 
@@ -224,6 +228,28 @@
                 console.log(valgt);
             }
         });
+
+
+
+        // Når du ruller 20px fra the toppen af dokumentet, vis button
+        window.onscroll = function() {
+            scrollFunction()
+        }
+
+        function scrollFunction() {
+            console.log("scroll function");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // Når du klikker på button, rul til toppen af siden
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 
