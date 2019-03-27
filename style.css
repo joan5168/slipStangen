@@ -263,6 +263,12 @@ iframe {
 
 #section5 p {
     margin-right: 150px;
+    margin-left: 20px;
+}
+
+#section5 h2 {
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 
@@ -276,6 +282,7 @@ iframe {
     background: #c7c7c7;
     background-size: cover;
     margin-left: 4vw;
+    margin-left: 10px;
 }
 
 #bars line {
@@ -387,7 +394,8 @@ footer {
 
     #svgcontainer {
         width: 100%;
-        min-width: 80vw;
+        min-width: 70vw;
+        margin: 0;
     }
 
     #section5 img {
